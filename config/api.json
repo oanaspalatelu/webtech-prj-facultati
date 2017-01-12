@@ -1,0 +1,349 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"version": "v1",
+		"title": "PROIECT WEB",
+    	"description": "bla bla bla"
+	},
+	"host": "localhost",
+	"schemes": ["http", "https"],
+  	"basePath": "/",
+	"paths": {
+		"/articles": {
+			"get": {
+				"tags": ["Articles"],
+				"operationId": "articles_get",
+				"consumes": [],
+				"produces": ["application/json",
+				"text/json"],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Article"
+							}
+						}
+					}
+				},
+				"deprecated": false
+			},
+			"post": {
+				"tags": ["Articles"],
+				"operationId": "articles_post",
+				"consumes": [],
+				"produces": ["application/json",
+				"text/json"],
+				"parameters": [{
+					"name": "body",
+					"in": "body",
+					"required": true,
+					"schema": {
+					    "$ref": "#/definitions/Article"
+					}
+				}],
+				"responses": {
+					"201": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Article"
+							}
+						}
+					}
+				},
+				"deprecated": false
+			}
+		},
+		
+		
+		
+			"/mails": {
+			"get": {
+				"tags": ["Mails"],
+				"operationId": "mails_get",
+				"consumes": [],
+				"produces": ["application/json",
+				"text/json"],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Mail"
+							}
+						}
+					}
+				},
+				"deprecated": false
+			},
+			"post": {
+				"tags": ["Mails"],
+				"operationId": "mails_post",
+				"consumes": [],
+				"produces": ["application/json",
+				"text/json"],
+				"parameters": [{
+					"name": "body",
+					"in": "body",
+					"required": true,
+					"schema": {
+					    "$ref": "#/definitions/Article"
+					}
+				}],
+				"responses": {
+					"201": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Mail"
+							}
+						}
+					}
+				},
+				"deprecated": false
+			}
+		},
+		
+		
+		
+		
+		"/articles/{id}": {
+			"get": {
+				"tags": ["Articles"],
+				"operationId": "articles_getById",
+				"consumes": [],
+				"produces": ["application/json",
+				"text/json"],
+				"parameters": [{
+					"name": "id",
+					"in": "path",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Article"
+							}
+						}
+					}
+				},
+				"deprecated": false
+			},
+			"put": {
+				"tags": ["Articles"],
+				"operationId": "articles_put",
+				"consumes": [],
+				"produces": ["application/json",
+				"text/json"],
+				"parameters": [{
+					"name": "id",
+					"in": "path",
+					"required": true,
+					"type": "string"
+				},{
+					"name": "body",
+					"in": "body",
+					"required": true,
+					"schema": {
+					    "$ref": "#/definitions/Article"
+					}
+				}],
+				"responses": {
+					"202": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Article"
+							}
+						}
+					}
+				},
+				"deprecated": false
+			},
+			"delete": {
+				"tags": ["Articles"],
+				"operationId": "articles_delete",
+				"consumes": [],
+				"produces": ["application/json",
+				"text/json"],
+				"parameters": [{
+					"name": "id",
+					"in": "path",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Article"
+							}
+						}
+					}
+				},
+				"deprecated": false
+			}
+		}
+	},
+	
+	
+	
+	
+	"/mails/{id}": {
+			"get": {
+				"tags": ["Mails"],
+				"operationId": "mails_getById",
+				"consumes": [],
+				"produces": ["application/json",
+				"text/json"],
+				"parameters": [{
+					"name": "id",
+					"in": "path",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Mail"
+							}
+						}
+					}
+				},
+				"deprecated": false
+			},
+			"put": {
+				"tags": ["Mails"],
+				"operationId": "mails_put",
+				"consumes": [],
+				"produces": ["application/json",
+				"text/json"],
+				"parameters": [{
+					"name": "id",
+					"in": "path",
+					"required": true,
+					"type": "string"
+				},{
+					"name": "body",
+					"in": "body",
+					"required": true,
+					"schema": {
+					    "$ref": "#/definitions/Mail"
+					}
+				}],
+				"responses": {
+					"202": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Mail"
+							}
+						}
+					}
+				},
+				"deprecated": false
+			},
+			"delete": {
+				"tags": ["Mails"],
+				"operationId": "mails_delete",
+				"consumes": [],
+				"produces": ["application/json",
+				"text/json"],
+				"parameters": [{
+					"name": "id",
+					"in": "path",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Mail"
+							}
+						}
+					}
+				},
+				"deprecated": false
+			}
+		}
+	},
+	
+	
+	
+	"definitions": {
+		"univL": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"nume": {
+					"type": "string"
+				}
+			}
+		}
+		
+	}
+		"definitions": {
+		"mail": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"nume": {
+					"type": "string"
+				},
+				"email": {
+					"type": "string"
+				},
+				"tema": {
+					"type": "string"
+				},
+				"comment": {
+					"type": "string"
+				}
+			}
+		}
+		
+	}
+	
+	"definitions": {
+		"specL": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"nume": {
+					"type": "string"
+				},
+				
+				"info": {
+				"type": "string"
+				}
+			}
+		}
+		
+	}
+	
+}

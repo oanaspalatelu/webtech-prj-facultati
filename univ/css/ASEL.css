@@ -1,0 +1,27 @@
+body {
+    
+    background-image: url("dra.jpg");
+    
+}
+#btn{
+    background-color:  #2e353d;
+   color: white;
+   border-radius: 24px;
+}
+body {
+      position: relative;
+  }
+  #section1  {padding-top:50px;height:500px;color: #fff; background-size:cover;background-image: url(b3.jpg) ;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-size:cover;background-image: url(b.jpg) ;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-size:cover; background-image: url(b2.jpg) ;}
+ 
+  #section5 {padding-top:50px;height:500px;color: #fff;background-size:cover; background-image: url(b3.jpg) ;}
+  #section6 {padding-top:50px;height:500px;color: #fff;background-size:cover; background-image: url(b.jpg) ;}
+  #section7 {padding-top:50px;height:500px;color: #fff;background-size:cover; background-image: url(b2.jpg) ;}
+  #section8 {padding-top:50px;height:500px;color: #fff;background-size:cover; background-image: url(b3.jpg) ;}
+
+  #section10 {padding-top:50px;height:500px;color: #fff;background-size:cover; background-image: url(b.jpg) ;}
+  #section11 {padding-top:50px;height:500px;color: #fff;background-size:cover; background-image: url(b2.jpg) ;}
+  #section12 {padding-top:50px;height:500px;color: #fff;background-size:cover; background-image: url(b3.jpg) ;}
+  #section13 {padding-top:50px;height:500px;color: #fff;background-size:cover; background-image: url(b.jpg) ;}
+  #section14 {padding-top:50px;height:500px;color: #fff;background-size:cover; background-image: url(b2.jpg) ;}
